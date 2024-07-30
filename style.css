@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #02061A;
+;
+}
+
+.w-1063{
+    width: 1063px;
+    margin: 0 auto;
+}
