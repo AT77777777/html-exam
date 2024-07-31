@@ -12,6 +12,12 @@ body{
 ;
 }
 
+body>svg{
+    position: absolute;
+    top: -92px;
+    z-index: -1;
+}
+
 .w-1080{
     width: 1080px;
     margin: 0 auto;
@@ -22,6 +28,17 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 92px 1px 0 28px;
+}
+
+.navbar a{
+    color: #FFF;
+    text-align: center;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 .navbar ul{
@@ -42,3 +59,58 @@ body{
     text-transform: capitalize;
 }
 
+.herosec {
+    display: flex;
+    margin-top: 188px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.herosec p{
+    color: #FFF;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 522px;
+    height: 233px;
+    margin-top: 138px;
+    flex-shrink: 0;
+}
+
+.herosec img{
+    position: relative;
+    z-index: -1;
+}
+
+.herosec button{
+    border-radius: 50px;
+
+
+    width: 256px;
+    height: 95px;
+    color: #FFF;
+    text-align: center;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.sell-nfts{
+    background: #23263C;
+    position: absolute;
+    top: 402px
+}
+
+.buy-nfts{
+    border: 3px solid #23263C;
+    opacity: 1;
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 402px;
+    left: 279px;
+}
