@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -164,12 +164,72 @@ body>svg{
     text-transform: capitalize;
 }
 
-.item{
+.w-1080>div{
     position: relative;
+}
+
+.item{
+    position: absolute;
     left: 50px;
     top: 256px;
 }
 
 .hero2{
+    width: 547px;
+    height: 468px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 550px;
+    top: 215px;
+}
+
+.hero2 p:nth-child(1){
+    color: #FFF;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73px;
+}
+
+.nft{
+    color: #56CAB1;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73px;
+}
+
+.hero2 p:nth-child(2){
+    color: #4C99BB;
+    font-family: Poppins, serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.hero2 p:nth-child(3){
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 6px;
+    position: relative;
+}
+
+.line1{
+    position: absolute;
+    top: 88px;
+}
+
+.line2{
+    margin: 0 17px;
+    position: relative;
+    top: 15px;
+}
+
+.hero2 button{
 
 }
