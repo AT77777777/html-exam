@@ -289,6 +289,7 @@ body>svg{
 }
 
 .lighthsec{
+    margin-top: 28px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -306,7 +307,6 @@ body>svg{
     width: 465px;
     height: 212px;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -349,12 +349,8 @@ body>svg{
     flex-shrink: 0;
 }
 
-
-
 .item2>span:nth-child(2){
     color: #56CAB1;
-    -webkit-text-stroke-width: 2;
-    -webkit-text-stroke-color: #02061A;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -368,7 +364,6 @@ body>svg{
 
 .item2 p{
     color: #FFF;
-
     text-align: center;
     font-size: 35px;
     font-style: normal;
@@ -393,15 +388,11 @@ body>svg{
 .item2>span:nth-child(4){
     border-radius: 3px;
     border: 2px #000;
-
     background: #1F143B;
     width: 148px;
     height: 51px;
     flex-shrink: 0;
     color: #52A7C6;
-
-    -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #02061A;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -508,7 +499,9 @@ body>svg{
     margin-top: 208px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 39px;
     flex-shrink: 0;
 }
 
@@ -519,4 +512,110 @@ body>svg{
     font-style: normal;
     font-weight: 700;
     line-height: 60px;
+}
+
+.test button{
+    border-radius: 50px;
+    background: #000;
+    width: 344px;
+    height: 85px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 150% */
+    text-transform: uppercase;
+}
+
+.footer{
+    height: 360px;
+    margin-top: 262px;
+    display: flex;
+    justify-content: center;
+    gap: 118px;
+}
+
+.footer p{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footer ul li{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    list-style-type: none;
+    margin-bottom: 22px;
+}
+
+.footer ul li:nth-child(1){
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footer form{
+    position: relative;
+}
+
+.footer form label{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    display: block;
+
+}
+
+input[type="email"]{
+    border: none;
+    border-radius: 50px;
+    background: #3B7C70;
+    width: 253px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-top: 9px;
+}
+
+input[type="email"]::placeholder{
+    color: #FFF;
+    opacity: 0.8;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-left: 12px;
+}
+
+input[type="submit"]{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 50px;
+    background: #262E48;
+    width: 100px;
+    height: 60px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: -100px;
+    top: 41px
 }
