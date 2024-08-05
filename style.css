@@ -31,7 +31,7 @@ body>svg{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 92px 3px 0 28px;
+    padding: 92px 3px 0;
 }
 
 .navbar a{
@@ -582,6 +582,13 @@ body>svg{
 }
 
 input[type="email"]{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-left: 12px;
     border: none;
     border-radius: 50px;
     background: #3B7C70;
@@ -594,12 +601,7 @@ input[type="email"]{
 input[type="email"]::placeholder{
     color: #FFF;
     opacity: 0.8;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-    padding-left: 12px;
+
 }
 
 input[type="submit"]{
