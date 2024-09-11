@@ -12,9 +12,9 @@ body{
 ;
 }
 
-body>svg{
+body>svg:nth-child(1){
     fill: rgba(84, 197, 173, 0.95);
-    filter: blur(217px);
+    filter: blur(117px);
     position: absolute;
     top: -92px;
     z-index: -1;
@@ -25,13 +25,16 @@ body>svg{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding: 0 7px;
 }
 
+
+/*-------------------header----------------------*/
 .navbar{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 92px 3px 0;
+    padding: 92px 0 0;
 }
 
 .navbar a{
@@ -63,15 +66,16 @@ body>svg{
     text-transform: capitalize;
 }
 
+
+/*-------------------hero-section----------------------*/
 .herosec {
     display: flex;
     justify-content: space-between;
     margin-top: 188px;
-    padding-left: 7px;
     position: relative;
 }
 
-.herosec p{
+.herosec h1{
     color: #FFF;
     font-size: 60px;
     font-style: normal;
@@ -85,7 +89,12 @@ body>svg{
 }
 
 .herosec img{
+    width: 500px;
     flex-shrink: 0;
+    position: absolute;
+    left: 575px;
+    z-index: -1;
+
 }
 
 .herosec button{
@@ -117,12 +126,13 @@ body>svg{
     left: 279px;
 }
 
+
+/*-------------------featured-section----------------------*/
 .featured{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 217px;
-    padding-left: 15px;
 }
 
 .featured p{
@@ -162,6 +172,8 @@ body>svg{
     text-transform: capitalize;
 }
 
+
+/*-------------------hero2-section----------------------*/
 .hero2-container{
     height: 645px;
     margin-top: 197px;
@@ -171,18 +183,19 @@ body>svg{
 }
 
 .item{
-    margin-top: 55px;
+    width: 490px;
+
 }
 
 .hero2{
     width: 547px;
     height: 468px;
     flex-shrink: 0;
-    padding-left: 65px;
+    padding-left: 40px;
     position: relative;
 }
 
-.hero2>p:nth-child(1){
+.hero2>h2:nth-child(1){
     color: #FFF;
     font-size: 60px;
     font-style: normal;
@@ -288,6 +301,8 @@ body>svg{
     text-transform: capitalize;
 }
 
+
+/*-------------------light-section----------------------*/
 .lighthsec{
     margin-top: 28px;
     position: relative;
@@ -296,7 +311,7 @@ body>svg{
     justify-content: space-between;
 }
 
-.lighthsec>p{
+.lighthsec>h2{
     color: #FFF;
     font-size: 60px;
     font-style: normal;
@@ -387,10 +402,10 @@ body>svg{
 
 .item2>span:nth-child(4){
     border-radius: 3px;
-    border: 2px #000;
+    border: 2px solid #000;
     background: #1F143B;
     width: 148px;
-    height: 51px;
+    height: 52px;
     flex-shrink: 0;
     color: #52A7C6;
     font-size: 40px;
@@ -401,6 +416,7 @@ body>svg{
     display: flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -415,6 +431,8 @@ body>svg{
     flex-shrink: 0;
 }
 
+
+/*-------------------testimonial-section----------------------*/
 .testmonial {
     display: flex;
     align-items: center;
@@ -434,7 +452,7 @@ body>svg{
     width: 100%;
 }
 
-.testmonial>p:nth-child(2){
+.testmonial>h2:nth-child(2){
     color: #FFF;
     text-align: center;
     font-size: 60px;
@@ -488,10 +506,12 @@ body>svg{
     border-radius: 79px;
     mix-blend-mode: luminosity;
     position: absolute;
-    left: 95px;
+    left: 100px;
     top: -78px;
 }
 
+
+/*-------------------test-section----------------------*/
 .test{
     border-radius: 20px;
     background: linear-gradient(97deg, #1F143B -19.45%, #3C8273 103.56%);
@@ -505,7 +525,7 @@ body>svg{
     flex-shrink: 0;
 }
 
-.test p{
+.test h2{
     color: #FFF;
     text-align: center;
     font-size: 60px;
@@ -515,6 +535,7 @@ body>svg{
 }
 
 .test button{
+    border: none;
     border-radius: 50px;
     background: #000;
     width: 344px;
@@ -529,12 +550,14 @@ body>svg{
     text-transform: uppercase;
 }
 
+
+/*-------------------footer----------------------*/
 .footer{
     height: 360px;
     margin-top: 262px;
     display: flex;
     justify-content: center;
-    gap: 118px;
+    gap: 114px;
 }
 
 .footer p{
@@ -564,6 +587,11 @@ body>svg{
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
+}
+
+.footer ul li a{
+    color: #FFF;
+    text-decoration: none;
 }
 
 .footer form{
@@ -620,4 +648,12 @@ input[type="submit"]{
     position: absolute;
     margin-left: -100px;
     top: 41px
+}
+
+body>hr{
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(97deg, #1F143B -19.45%, #3C8273 103.56%);
+    width: 100vw;
+    height: 9px;
 }
